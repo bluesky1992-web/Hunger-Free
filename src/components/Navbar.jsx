@@ -77,7 +77,7 @@ export default function Nav() {
 
     
         </Typography>
-        <h1 className="text-center pl-36  font-sans font-bold  text-xl  text-light-green-800"> Hunger free world</h1>
+        <Typography className="sm:text-center pl-[20%]  sm:pl-37  font-sans text-sm sm:font-bold  sm:text-xl  text-[#1c7980]"> Hunger free world</Typography>
         <div className="hidden lg:block">{navList}</div>
         
         <IconButton
