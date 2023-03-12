@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HungerSolutionsSection from "./components/HungerSolutionsSection";
 import Card from "./components/Card";
-import Location from "./components/Location";
 import cardsData from "./assets/cardData";
-
+import WhereWeAre from "./components/WhereWeAre";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -24,7 +24,9 @@ function App() {
           );
         })}
       </div>
-      <Location />
+
+      <WhereWeAre />
+      <Footer />
     </div>
   );
 }
