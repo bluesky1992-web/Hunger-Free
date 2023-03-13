@@ -6,9 +6,11 @@ import Card from "./components/Card";
 import cardsData from "./assets/cardData";
 import WhereWeAre from "./components/WhereWeAre";
 import Footer from "./components/Footer";
+import { Auth } from "./components/auth";
 function App() {
   return (
     <div>
+      <Auth />
       <Navbar />
       <Hero />
       <HungerSolutionsSection />
@@ -27,6 +29,7 @@ function App() {
 
       <WhereWeAre />
       <Footer />
+      
     </div>
   );
 }
