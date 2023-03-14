@@ -1,11 +1,13 @@
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   MobileNav,
   Typography,
   IconButton,
-  Avatar
+  Avatar,
+  
 } from "@material-tailwind/react";
  
 export default function Nav() {
@@ -27,9 +29,9 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
+        <Link to={'/'}>
+        Home
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -37,9 +39,9 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Account
-        </a>
+        <Link to="/login" className="flex items-center">
+          Log In
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -121,9 +123,10 @@ export default function Nav() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          
+         
         </div>
       </MobileNav>
+      
     </Navbar>
   );
 }
