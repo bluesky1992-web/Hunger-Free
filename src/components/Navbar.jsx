@@ -40,7 +40,7 @@ export default function Nav() {
         className="p-1 font-normal"
       >
         <Link to="/login" className="flex items-center">
-          Log In
+          Sign Up
         </Link>
       </Typography>
       <Typography

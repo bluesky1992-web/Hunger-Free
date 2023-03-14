@@ -24,7 +24,9 @@ export const Auth = () => {
     }
   };
   return (
-    <form
+    <div>
+      <h1 className="text-center pt-10 text-3xl text-green-900">Sign Up </h1>
+       <form
     onSubmit={(e) => {
       e.preventDefault();
       signIn();
@@ -71,5 +73,7 @@ export const Auth = () => {
         Sign in
       </button>
     </form>
+    </div>
+   
   );
 };
